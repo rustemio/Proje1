@@ -3,67 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alışkanlık Takip Etme</title>
-    <style>
-        body {
+    <title>Öğrenci hayatını kolaylaştıran uygulamalar</title>
+    
+	<style>
+		body {
             font-family: 'Gill Sans', sans-serif;
             background-image: url('/Users/rustemio/Rustem Tukhbetov/background.tif');
             background-size:auto;
             background-position: center;
             background-attachment: fixed;
+            margin-left: 0%;
+            margin-right: 0%;
             background-color: rgba(255, 255, 255, 0.068);
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            border: 1pt solid rgb(50, 144, 0);
-        }
-
-        th, td {
-            border: 1pt solid rgb(50, 144, 0);
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: rgb(243, 255, 189);
-        }
-
-        h1 {
-            text-align: center;
-        }
+		}
+		nav {
+			background-color: #4CAF50;
+			overflow: hidden;
+		}
+		nav a {
+			float: left;
+			color: white;
+			text-align: center;
+			padding: 14px 30px;
+			text-decoration: none;
+			font-size: 20px;
+			transition: background-color 0.5s ease;
+		}
+		nav a:hover {
+			background-color: #3e8e41;
+		}
+		.icon {
+			display: inline-block;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 0%;
+			transition: transform 0.5s ease;
+		}
+		.icon:hover {
+			transform: scale(1.1);
+		}
 
         a:link {
-           color: rgb(4, 182, 31);
-           background-color: transparent;
-           text-decoration: none;
+        background-color: transparent;
+        text-decoration: none;
         }
         a:visited {
-           color: rgb(4, 182, 31);
-           background-color: transparent;
-           text-decoration: none;
+        color: rgb(4, 182, 31);
+        background-color: transparent;
+        text-decoration: none;
         }
         a:active {
-           color: rgb(94, 255, 0);
-           background-color: transparent;
+        color: rgb(94, 255, 0);
+        background-color: transparent;
         }
-    </style>
+        .cont {
+            margin-left: 11%;
+            margin-right: 11%;
+            font-size: 150%;
+        }
+        .zag{
+            text-align: center;
+            font-size: 150%;
+        }
+        .img{
+            margin-left: 10%;
+        }
+        .leftimg {
+            float:left; /* Выравнивание по левому краю */
+            margin: 7px 20px 7px 0; /* Отступы вокруг картинки */
+        }
+        .rightimg  {
+            float: right; /* Выравнивание по правому краю  */ 
+            margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+        }
+
+        .appl {
+			display: inline-block;
+            margin-bottom: 0%;
+            margin-right: 5%;
+			transition: transform 0.5s ease;
+		}
+		.appl:hover {
+			transform: scale(1.1);
+		}
+	</style>
 </head>
-<body>
 
-    <h1><a href="/Users/rustemio/Rustem Tukhbetov/Ana sayfa.html">ÖĞRENCİ HAYATINI KOLAYLAŞTIRAN UYGULAMALAR</a></h1>
-    <table>
-        <tr>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/Aliskanlik.html">Alışkanlık Takip Etme</a></th>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/NotAlma.html">Not Alma ve Organizasyon</a></th>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/Fen.html">Fen ve Öğrenme</a></th>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/Dil.html">Dil Öğrenme</a></th>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/Depo.html">Belge Depolama</a></th>
-            <th><a href="/Users/rustemio/Rustem Tukhbetov/DilBilg.html">Dil Bilgisi</a></th>
-        </tr>
-    </table>
+<body> 
 
-    <h1 style="color: rgb(4, 182, 31)">ALIŞKANLIK TAKİP ETME</h1>
+    <h1><a style="color: #3e8e41; margin-left: 18%;">ÖĞRENCİ HAYATINI KOLAYLAŞTIRAN UYGULAMALAR</a></h1>
+
+    <nav>
+        <a href="/Users/rustemio/Rustem Tukhbetov/Ana sayfa.html">Ana sayfa</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/Aliskanlik.html">Alışkanlık Takip Etme</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/NotAlma.html">Not Alma ve Organizasyon</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/Fen.html">Fen ve Öğrenme</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/Dil.html">Dil Öğrenme</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/Depo.html">Belge Depolama</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/DilBilg.html">Dil Bilgisi</a>
+        <a href="/Users/rustemio/Rustem Tukhbetov/DilBilg.html">Soru sor</a>
+    </nav>
+    <div class="zag"><h1><a style="color: #3e8e41">Alışkanlık Takip Etme</a></h1></div>
+    <div class="cont"><p><img src="/Users/rustemio/Rustem Tukhbetov/icons/forest.png" class="leftimg"> <h1>Forest</h1>Forest, öğrencilere telefonlarını belirli bir süre boyunca kullanmamaları konusunda teşvik eden bir uygulamadır. Belirli bir süre boyunca telefonunuzu kullanmazsanız, sanal bir ağaç büyür. Bu, odaklanma sürenizi artırmak için görsel bir motivasyon sağlar.</p><br><a href="https://apps.apple.com/tr/app/forest-odaklan/id866450515?l=tr" target="_blank"><img class="appl" src="/Users/rustemio/Rustem Tukhbetov/icons/AppStore.png" alt="ICON1"></a><img class="appl" src="/Users/rustemio/Rustem Tukhbetov/icons/GooglePlay.png" alt="ICON2"></div>
 
 </body>
 </html>
